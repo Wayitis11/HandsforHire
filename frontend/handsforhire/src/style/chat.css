@@ -1,0 +1,185 @@
+
+.chat-btn {
+    right: 14px;
+    bottom: 30px;
+    cursor: pointer;
+    position: fixed;
+    
+}
+
+.chat-btn .close {
+    display: none
+}
+
+.chat-btn i {
+    transition: all 0.9s ease
+}
+
+#check:checked~.chat-btn i {
+    display: block;
+    pointer-events: auto;
+    transform: rotate(180deg)
+}
+
+#check:checked~.chat-btn .comment {
+    display: none
+}
+
+.chat-btn i {
+    font-size: 22px;
+    color: #fff !important
+}
+
+.chat-btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    background-color: blue;
+    color: #fff;
+    font-size: 22px;
+    border: none;
+    
+}
+
+.wrapper {
+    position: fixed;
+    right: 20px;
+    bottom: 90px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all 0.4s;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 5px 0px;
+}
+
+#check:checked~.wrapper {
+    opacity: 1
+}
+#to-show{
+    opacity: 0;
+  }
+  
+  #to-show:target{
+    opacity: 1;
+  }
+.header {
+    padding: 10px;
+    background-color: #2c3e50;
+    border-radius: 5px 5px 0px 0px;
+    margin-bottom: 1px;
+    color: #fff
+}
+
+.chat-form {
+    padding: 15px
+}
+
+.chat-form input,
+textarea,
+.chat-form .button {
+    margin-bottom: 10px
+}
+
+.chat-form textarea {
+    resize: none
+}
+
+.form-control:focus,
+.chat-form .btn:focus {
+    box-shadow: none
+}
+
+.chat-form .btn,
+.chat-form .btn:focus,
+.chat-form .btn:hover {
+    background-color: #2c3e50;
+    border: #2c3e50;
+}
+
+#check {
+    display: none !important
+}
+#frame {
+    width: 95%;
+    min-width: 300px;
+    max-width: 1000px;
+    height: 70vh;
+    min-height: 300px;
+    max-height: 720px;
+    background: #E6EAEA;
+}
+#frame #sidepanel #contacts {
+    height: calc(100% );
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#frame #sidepanel {
+    float: left;
+    min-width: 280px;
+    max-width: 340px;
+    width: 100%;
+    height: 100%;
+    background: #2c3e50;
+    color: #f5f5f5;
+    overflow: hidden;
+    position: relative;
+}
+#frame #sidepanel #contacts::-webkit-scrollbar {
+    width: 8px;
+    background: #2c3e50;
+}
+#frame #sidepanel #contacts::-webkit-scrollbar-thumb {
+    background-color: #243140;
+}
+#frame #sidepanel #contacts ul li.contact {
+    position: relative;
+    padding: 10px 0 15px 0;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+#frame #sidepanel #contacts ul li.contact .wrap {
+    width: 88%;
+    margin: 0 auto;
+    position: relative;
+}
+#frame #sidepanel #contacts ul li.contact .wrap span.online {
+    background: #2ecc71;
+}
+#frame #sidepanel #contacts ul li.contact .wrap span {
+    position: absolute;
+    left: 0;
+    margin: -2px 0 0 -2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid #2c3e50;
+    background: #95a5a6;
+}
+#frame #sidepanel #contacts ul li.contact .wrap img {
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+#frame #sidepanel #contacts ul li.contact .wrap .meta {
+    padding: 5px 0 0 0;
+}
+#frame #sidepanel #contacts ul li.contact .wrap .meta .name {
+    font-weight: 600;
+}
+#frame #sidepanel #contacts ul li.contact .wrap .meta .preview {
+    margin: 5px 0 0 0;
+    padding: 0 0 1px;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -moz-transition: 1s all ease;
+    -o-transition: 1s all ease;
+    -webkit-transition: 1s all ease;
+    transition: 1s all ease;
+}

@@ -1,0 +1,60 @@
+
+.login{
+  
+    background-size: cover;
+    height: 100vh;
+    
+    
+ 
+}
+
+.login .form-row {
+    margin-bottom: 26px; }
+    .form-row.form-group {
+      display: flex; }
+      .form-row.form-group .form-holder {
+        width: 50%;
+        margin-right: 25px; }
+        .form-row.form-group .form-holder:last-child {
+          margin-right: 0; }
+  
+  .login .form-holder {
+    position: relative; }
+    .login .form-holder i {
+      position: absolute;
+      top: 5px;
+      padding-left: 8px;
+      font-size: 17px;
+      color: rgb(85, 77, 77); }
+      .form-holder i.small {
+        font-size: 13px;
+        top: 50%;
+        transform: translateY(-50%); }
+  
+  .login .form-control {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    padding-left: 30px;
+    background: none;
+    font-weight: 500; }
+    
+
+      .login .form-holder i.small {
+        font-size: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    
+   
+ .login input, textarea, select {
+            font-family: "Poppins-Regular";
+            font-size: 15px;
+            color: #333;
+        }
+.login button{
+  font-family: "Poppins-Regular";
+  font-size: 15px;
+  color: rgb(236, 228, 228);
+}

@@ -1,0 +1,66 @@
+
+.profile .profile-header {
+    position: relataive;
+}
+.profile .profile-header .profile-header-cover {
+   
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 10.625rem;
+    position: relative;
+    background-image: linear-gradient(to right, #614385, #516395);
+}
+@media (max-width: 991.98px) {
+    .profile .profile-header .profile-header-cover {
+        height: 6.25rem;
+    }
+}
+.profile .profile-header .profile-header-cover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 40, 55, 0.35);
+}
+.profile .profile-header .profile-header-content {
+    position: relative;
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: flex-end;
+    align-items: flex-end;
+}
+@media (max-width: 991.98px) {
+    .profile .profile-header .profile-header-content {
+        display: block;
+        padding: 0 20px;
+    }
+}
+.profile .profile-header .profile-header-content .profile-header-img {
+    width: 12.5rem;
+    height: 12.5rem;
+    overflow: hidden;
+    z-index: 10;
+    margin-top: -8.75rem;
+    padding: 0.1875rem;
+    background: #fff;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+}
+@media (max-width: 991.98px) {
+    .profile .profile-header .profile-header-content .profile-header-img {
+        width: 6.375rem;
+        height: 6.375rem;
+        margin: -3.75rem 0 0;
+    }
+}
+.profile .profile-header .profile-header-content .profile-header-img img {
+    max-width: 100%;
+    width: 100%;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}

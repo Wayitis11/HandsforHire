@@ -1,0 +1,183 @@
+<!doctype html> {% load static %}
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+
+    <!-- custom CSS -->
+
+    <link rel="stylesheet" href=" {% static 'style/main.css' %} ">
+        <link rel="stylesheet" href=" {% static 'style/search.css' %} ">
+    <link href="{% static 'style/forms.css' %}" rel="stylesheet">
+    <link href="{% static 'style/professionalCard.css' %}" rel="stylesheet">
+<link href="{% static 'style/user.css' %}" rel="stylesheet">
+    <link href="{% static 'style/slider.scss' %}" rel="stylesheet">
+    <link href="{% static 'style/user.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.min.css">
+
+    <link href="{% static 'style/user.css' %}" rel="stylesheet">
+
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/724cd6c544.js" crossorigin="anonymous"></script>
+
+
+
+    <title>HandsForHire|Hire Plumber and Electrican Online In Kathmandu</title>
+</head>
+
+<body>
+
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="{% url 'listAllProfessionals' %}"> <img src="{% static 'images/logoHFH.svg' %}" alt="logoImg"> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                    <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link navigation active" aria-current="page" href="">How It Works</a>
+                        </li>
+
+                    </ul>
+
+
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                     <li class="nav-item">
+                            <a class="nav-link navigation active" aria-current="page" href="{% url 'professionals_register' %}">Become a Professional</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link navigation active" aria-current="page" href="">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation active" aria-current="page" href="">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation active" aria-current="page" href="{% url 'client_register' %}">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navigation active" aria-current="page" href="{% url 'login' %}">Login</a>
+                        </li>
+
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+
+        {% comment %} <div class="container my-3">
+            <div class="alert alert-secondary" id="message" role="alert">
+                
+            </div>
+        </div> {% endcomment %}
+
+        {% block content %} {% endblock content %}
+
+
+    </main>
+
+
+
+    <footer>
+
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-4">
+                        <h6>HandsForHire</h6>
+                        <p class="text-justify"> HandsForHire is an on-demand proffesional hiring system. Hiring a proffesional has never been easy however with our platform end users and proffesionals can interact with each other. Electricans and plumbers have already engaged
+                            with us now its your time to hire a preoffesional to solve your problem.</p>
+                    </div>
+                    <div class="col-xs-6 col-md-1"></div>
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Contact</h6>
+                        <ul class="footer-links">
+                            <p><i class="fas fa-map-marker-alt"></i> Kathmandu, Nepal</p>
+                            <p><i class="fas fa-phone"></i>+977 9861432303</p>
+                            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@domain.com">info@domain.com</a></p>
+
+                        </ul>
+                    </div>
+                    <div class="col-xs-6 col-md-1"></div>
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Become a professional</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+                            <a href="">HandsForHire</a>
+                        </p>
+                        <p class="copyright-text">Developed By Sentinels
+
+                        </p>
+                    </div>
+
+                    <!-- <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </footer>
+    </footer>
+
+
+
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    <script>
+        const myCarousel = document.getElementById('myCarousel')
+        if(myCarousel)
+        {
+            myCarousel.addEventListener('slid.bs.carousel', function() {
+            const activeItem = this.querySelector(".active");
+            document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
+            document.querySelector(".testi-img .circle").style.backgroundColor = activeItem.getAttribute("data-color");
+            })
+        }
+        
+    </script>
+</body>
+
+</html>

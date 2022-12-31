@@ -1,0 +1,11 @@
+{% autoescape off %}
+Hi {{ user.username }},
+
+Please click on the link to confirm your account, 
+*Note: You are accepting our terms and condition. Please Read The Terms and Conditions Before Clicking link https://r-handsforhire.herokuapp.com/terms
+http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+
+
+
+{% endautoescape %}

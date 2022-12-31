@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.professionals_signup {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 9px 0px; */
+}
+@media (max-width:700px) {
+    .signupimage {
+      display: none;
+    }
+  }
+.card_design{
+    width: 35vw;
+    height: auto;
+    text-align: center;
+}
+
+.form_section {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 9px 0px;
+    /* background-color: rgb(172, 102, 102); */
+}
+
+.card-header {
+    background-color: transparent;
+}
+
+@media (max-width:768px) {
+    .card_design {
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width:425px) {
+    .card_design {
+        padding: 2rem;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+}
+

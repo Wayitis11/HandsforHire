@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+body {
+    background-color: #ffffff;
+}
+
+.navbar {
+    background-color: rgb(37, 22, 62) !important;
+}
+
+.navbar {
+    background-color: rgb(12, 13, 70) !important;
+}
+
+.navigation {
+    color: rgb(221, 221, 221) !important;
+    font-size: 17px !important;
+    padding-left: 20px !important;
+}
+
+.navbar-toggler-icon {
+    color: cyan !important;
+}
+
+.banner {
+    width: 100%;
+    height: 40ch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(45deg, rgba(33, 12, 61, 0.98), rgba(33, 12, 61, 0.98)), url(../images/pe.jpg); */
+}
+
+.banner_content {
+    /* position: relative; */
+    text-align: center;
+    align-items: center;
+    color: cyan;
+    /* top: 25%; */
+}
+
+.banner_content h4 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.content h4 {
+    padding: 10px;
+}
+
+@media screen and (max-width: 960px) {
+    .banner_content h4 {
+        font-size: 2rem;
+    }
+}
+
+.hire_now {
+    height: 3rem;
+    width: 13rem;
+    font-size: larger;
+    margin-left: 30px;
+}
+
+.get_help_section {
+    background-color: rgb(221, 221, 221);
+}
+
+.get_help h4 {
+    text-align: center;
+}
+
+.content li {
+    padding: 5px;
+}
+
+.infografic figure img {
+    height: 20rem !important;
+    width: 100%;
+}
+
+.para {
+    text-align: justify;
+}
+
+@media(max-width:991px) {
+    .para {
+        text-align: start;
+    }
+}
+
+.pb-5,
+.py-5 {
+    padding-bottom: 3rem !important;
+}
+
+.heading-section .subheading {
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 0;
+    color: #b7472a;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    position: relative;
+}
+
+.repair_section {
+    position: relative;
+    text-align: justify;
+}
+
+.text {
+    margin-top: 40px;
+}
+
+.image,
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#about {
+    background: #e9ecef;
+}
+
+.imgAbout {
+    width: 100%;
+    height: 100%;
+}
+
+#about {
+    padding-top: 10px;
+}
+
+#about .container .row .col-md-6 img {
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+}
+
+.repair_service figure img {
+    height: 50% !important;
+    width: 50% !important;
+}
+
+.top_professionals {
+    background-color: rgb(16, 9, 56);
+}
+
+.card-text {
+    text-align: justify;
+    margin: auto;
+}
+
+@media(max-width:768px) {
+    .card-text {
+        text-align: center;
+        margin: auto;
+        width: 50%;
+    }
+}
+
+.card-text img {
+    padding: 3px;
+}
+
+.heading {
+    color: cornsilk;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.professionals_card {
+    border-color: chartreuse!important;
+}
+
+.testimonial-section {
+    background-color: #ffffff;
+    /* padding: 80px 0; */
+}
+
+.testi-img .img-box {
+    max-width: 360px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+.testi-img .circle {
+    height: 360px;
+    width: 360px;
+    background-color: #fb9c9a;
+    position: absolute;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    transition: all 0.5s ease;
+}
+
+.testi-img .img-box-inner {
+    position: relative;
+    border-radius: 0 0 180px 180px;
+    overflow: hidden;
+}
+
+.testi-img .img-box-inner img {
+    max-width: 310px;
+}
+
+.testimonial-section .carousel-inner {
+    margin-bottom: 20px;
+}
+
+.testimonial-section .carousel-control-prev {
+    margin-right: 10px;
+}
+
+.testimonial-section .carousel-control-next,
+.testimonial-section .carousel-control-prev {
+    position: relative;
+    height: 35px;
+    width: 35px;
+    background-color: #fb9c9a;
+    display: inline-flex;
+    border-radius: 50%;
+}
+
+.testimonial-section .carousel-control-prev img,
+.testimonial-section .carousel-control-next img {
+    width: 15px;
+}
+
+.testi-item h3,
+.testi-item p {
+    font-size: 18px;
+}
+
+.testi-item h3 {
+    text-transform: capitalize;
+}
+
+
+/* Responsive */
+
+@media(max-width:991px) {
+    .testi-img .img-box {
+        max-width: 300px;
+    }
+    .testi-img .circle {
+        height: 300px;
+        width: 300px;
+    }
+    .testi-img .img-box-inner {
+        border-radius: 0 0 150px 150px;
+    }
+    .testi-img .img-box-inner img {
+        max-width: 230px;
+    }
+}
+
+@media(max-width:991px) {
+    .card_profile_picture {
+        max-width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+}
+
+@media(max-width:767px) {
+    .testi-img {
+        margin-bottom: 25px;
+    }
+}
+
+.getting_started_today {
+    background-color: rgb(39, 46, 110);
+}
+
+.site-footer {
+    background-color: rgb(12, 13, 70) !important;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #fff;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #fff;
+}
+
+.site-footer a:hover {
+    color: #d33030;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #d33030;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0;
+    text-align: center;
+}
+
+.copyright-text a {
+    text-decoration: none;
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+
+/* professional profile */
+
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+}
+
+.rate:not(:checked)>label {
+    float: right;
+    width: 0.8em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+}
+
+.rate:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rate>input:checked~label {
+    color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+    color: #deb217;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+    color: #c59b08;
+}
+
+.button {
+    margin: 5px;
+    padding: 5px;
+    height: 2.5rem;
+    width: 10rem;
+}
+
+.userbtn {
+    background-color: #33353d;
+    height: 2rem;
+    margin-top: 8px;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+}
+
+.profAbout {
+    background-color: #FEFBFA;
+    border: 1px dotted #b9a7a7;
+    border-radius: 1%;
+}
+
+.profProfile {
+    background-color: #FEFBFA;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 5px 5px 0px;
+}
+
+.dashboard-list li {
+    display: block;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.dashboard-list a {
+    text-decoration: none;
+    color: #2f0647;
+}
+
+.dashboard-list a:hover {
+    color: #4b00fa;
+}
+
